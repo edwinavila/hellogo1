@@ -1,7 +1,13 @@
 package main
 
-import "github.com/hellogo1/variables"
+import (
+	"fmt"
+
+	"github.com/hellogo1/variables"
+)
 
 func main() {
-	variables.MuestraEnteros()
+	estado, texto := variables.ConviertoaTexto(1588)
+	fmt.Println(estado)
+	fmt.Println(texto)
 }
